@@ -52,12 +52,12 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=trackstar_dev',
+			'connectionString' => 'mysql:host=localhost;dbname=yii_trackstar_dev',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => 'root',
 			'charset' => 'utf8',
-      'tablePrefix' => 'tbl_',
+                        'tablePrefix' => 'tbl_',
 		),
 		
 		'errorHandler'=>array(
