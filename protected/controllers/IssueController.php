@@ -205,4 +205,12 @@ class IssueController extends Controller
         $this->loadProject($projectId);        
         $filterChain->run();
     }
+    
+    /**
+    * Returns the project model instance to which this issue belongs
+    */
+    public function getProject(){
+        return $this->_project;
+    }
+
 }

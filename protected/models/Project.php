@@ -107,8 +107,8 @@ class Project extends CActiveRecord
     * @return array of valid users for this project, indexed by user IDs
     */
     public function getUserOptions(){
-        $userArray = array();
-        return $userArray;
+        $usersArray = CHtml::listData($this->users, 'id', 'username');
+        return $usersArray;
     }
 
 }
